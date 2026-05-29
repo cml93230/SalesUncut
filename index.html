@@ -9,7 +9,7 @@
   <style>
     /* ---- Hero ---- */
     .hero { position: relative; padding: 60px 0 120px; overflow: hidden; }
-    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: flex-start; }
     .hero h1 { font-size: clamp(56px, 7vw, 104px); margin: 24px 0 28px; }
     .hero h1 .gold-word { color: var(--gold-deep); font-family: var(--font-serif); font-style: italic; text-transform: none; font-weight: 400; letter-spacing: -.02em; }
     .hero h1 .strike { position: relative; color: var(--teal-3); }
@@ -22,7 +22,7 @@
     .hero-kpi .kpi-lbl { font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--teal-3); margin-top: 4px; }
 
     /* ---- Hero card stack ---- */
-    .hero-stage { position: relative; aspect-ratio: 1; perspective: 1400px; }
+    .hero-stage { position: relative; aspect-ratio: 0.65; perspective: 1400px; }
     .hero-card-stack { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
     .hero-card-stack .tcard { position: absolute; transition: transform .7s cubic-bezier(.22,1,.36,1); }
     .hero-card-stack .tcard:nth-child(1) { transform: translateX(-90px) translateY(20px) rotate(-12deg); z-index: 1; }
@@ -186,24 +186,24 @@
         <div class="col col-candidat">
           <span class="eyebrow" style="color:var(--gold)">Pour les sales</span>
           <h2><small>Côté candidat</small>Sors du<br>CV-bingo. Place à la preuve.</h2>
-          <p>Tu en as marre d’envoyer 80 candidatures pour trois entretiens ? Prouve ce que tu sais faire et laisse les recruteurs venir à toi.</p>
+          <p>Tu en as marre d'envoyer 80 candidatures pour trois entretiens ? Prouve ce que tu sais faire et laisse les recruteurs venir à toi.</p>
           <ul>
-            <li>Ta carte active dans le pool pendant 18 mois : les recruteurs te trouvent, tu n’as rien à faire</li>
+            <li>Ta carte active dans le pool pendant 18 mois : les recruteurs te trouvent, tu n'as rien à faire</li>
             <li>Tu fixes tes conditions (salaire, remote, taille) — le matching vient à toi</li>
-            <li>Anonymat complet possible : tu valides avant de te révéler</li>
-            <li>Badge LinkedIn certifié SalesUncut : prouve tes scores directement sur ton profil</li>
+            <li>Anonymat complet possible : tu valides avant de te révéler</li>
+            <li>Badge LinkedIn certifié SalesUncut : prouve tes scores directement sur ton profil</li>
           </ul>
           <a href="candidat.html" class="btn gold">Passer ma simulation →</a>
         </div>
         <div class="col col-recruteur">
           <span class="eyebrow">Pour les recruteurs</span>
           <h2><small>Côté recruteur</small>Filtre.<br>Écoute. Recrute.</h2>
-          <p>Plus de pré-quali interminables au téléphone. Tu vois la carte, tu cliques l’extrait closing, tu sais en 30 secondes si le profil mérite un entretien.</p>
+          <p>Plus de pré-quali interminables au téléphone. Tu vois la carte, tu cliques l'extrait closing, tu sais en 30 secondes si le profil mérite un entretien.</p>
           <ul>
             <li>30 secondes pour décider si un profil mérite un entretien</li>
             <li>Filtres sur les vraies compétences (closing, discovery, gestion objections)</li>
-            <li>Extraits audio horodatés : tu entends la voix, les réactions, la posture</li>
-            <li><strong>Essai gratuit : 1 profil complet sans CB</strong></li>
+            <li>Extraits audio horodatés : tu entends la voix, les réactions, la posture</li>
+            <li><strong>Essai gratuit : 1 profil complet sans CB</strong></li>
           </ul>
           <a href="marketplace.html" class="btn">Voir le pool →</a>
         </div>
@@ -242,27 +242,27 @@
       <h1 style="font-size:48px;margin:12px 0 32px;">Ce que tout le monde demande.</h1>
       <div class="faq">
         <details>
-          <summary>C’est quoi le prix ?</summary>
+          <summary>C'est quoi le prix ?</summary>
           <p>5€ pour passer la simulation. Un profil qui reste actif 18 mois dans le pool recruteurs.</p>
         </details>
         <details>
-          <summary>Ça sert à quoi si j’ai déjà un bon CV ?</summary>
-          <p>Le CV dit ce que tu as fait. L’appel dit comment tu vends. Les recruteurs qui recrutent des sales veulent entendre le deuxième, pas lire le premier.</p>
+          <summary>Ça sert à quoi si j'ai déjà un bon CV ?</summary>
+          <p>Le CV dit ce que tu as fait. L'appel dit comment tu vends. Les recruteurs qui recrutent des sales veulent entendre le deuxième, pas lire le premier.</p>
         </details>
         <details>
-          <summary>Comment vous notez ?</summary>
+          <summary>Comment vous notez ?</summary>
           <p>6 dimensions scorées sur 100 — accroche, découverte, objections, valeur, closing, création de valeur.</p>
         </details>
         <details>
-          <summary>Je peux retenter ?</summary>
+          <summary>Je peux retenter ?</summary>
           <p>Oui, après 30 jours. Tu peux aussi passer une autre famille sectorielle pour montrer que ton profil tient sur plusieurs terrains.</p>
         </details>
         <details>
-          <summary>Et si mon score est mauvais ?</summary>
+          <summary>Et si mon score est mauvais ?</summary>
           <p>Tu reçois ton rapport complet avec les axes de progression. Tu décides toi-même si tu publies ton profil dans le pool.</p>
         </details>
         <details>
-          <summary>Je suis recruteur. Comment j’accède au pool ?</summary>
+          <summary>Je suis recruteur. Comment j'accède au pool ?</summary>
           <p>1 profil complet gratuit sans CB. Filtre par score, secteur, disponibilité. Tu cliques sur un extrait audio, tu sais en 30 secondes. Abonnement si tu veux accès complet.</p>
         </details>
       </div>
@@ -272,7 +272,7 @@
   <!-- CTA FINAL -->
   <section style="background:var(--ink);color:var(--cream);padding:100px 0;position:relative;overflow:hidden;">
     <div class="container" style="text-align:center;position:relative;">
-      <span class="eyebrow" style="color:var(--gold)">L’heure de vérité</span>
+      <span class="eyebrow" style="color:var(--gold)">L'heure de vérité</span>
       <h1 style="font-size:clamp(64px,9vw,140px);margin:24px 0;color:var(--cream);">
         Tu sais vendre.<br>
         <span style="color:var(--gold);font-family:var(--font-serif);font-style:italic;text-transform:none;font-weight:400;">Prouve-le.</span>
