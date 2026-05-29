@@ -22,6 +22,7 @@ function renderCard(c, opts = {}) {
   }).join('');
 
   const displayName = c.anonymous ? 'Anonyme' : c.name;
+  const rolePrefix = c.role_type ? `<span class="tcard-role">${c.role_type}</span> · ` : '';
 
   return `
     <div class="tcard ${level} ${compact ? 'sm' : ''}" data-candidate-id="${c.id}">
@@ -44,7 +45,7 @@ function renderCard(c, opts = {}) {
         </div>
         <div class="tcard-stats">${statsHtml}</div>
         <div class="tcard-footer">
-          <span>${fam.name}</span>
+          <span>${rolePrefix}${fam.name}</span>
         </div>
       </div>
     </div>`;
@@ -125,6 +126,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     .tcard-photo + .tcard-rarity-stamp { z-index: 2; }
     .tcard-family-badge { z-index: 2; }
+    .tcard-role {
+      font-weight: 800; color: var(--rust, #b34e2a);
+      letter-spacing: .08em;
+    }
   `;
   document.head.appendChild(style);
 
