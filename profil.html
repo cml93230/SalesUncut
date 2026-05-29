@@ -102,12 +102,13 @@
     .action-btn.secondary { background: transparent; color: var(--cream); border: 1.5px solid rgba(255,248,231,.3); }
     .action-btn.secondary:hover { border-color: var(--cream); }
 
-    /* --- Two-col sections — stretch pour aligner les panels --- */
+    /* --- Two-col sections --- */
     .profil-section { padding: 40px 0; }
     .profil-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: stretch; }
     .profil-panel {
       border: 1.5px solid var(--cream-3); border-radius: 8px;
       padding: 28px; background: var(--cream);
+      display: flex; flex-direction: column;
     }
     .profil-panel-eyebrow {
       font-family: var(--font-mono); font-size: 10px; letter-spacing: .2em;
@@ -131,7 +132,7 @@
     }
     .radar-click-hint::before { content: '→'; color: var(--gold-deep); }
 
-    /* --- Dimension bars --- */
+    /* --- Dimension bars (pleine largeur) --- */
     .dim-list { display: flex; flex-direction: column; gap: 8px; }
     .dim-card {
       border: 1.5px solid var(--cream-3); border-radius: 6px;
@@ -159,6 +160,9 @@
       padding: 10px 20px; border-radius: 4px; margin-top: 10px;
       background: var(--gold-deep); color: var(--cream); cursor: pointer; border: none;
     }
+
+    /* Dim grid 2 colonnes dans la section pleine largeur */
+    .dim-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 
     /* --- Points forts --- */
     .profil-pf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 20px; }
@@ -199,20 +203,24 @@
     .audio-meta { font-family: var(--font-mono); font-size: 9px; color: var(--teal-3); white-space: nowrap; }
     .audio-card.featured .audio-meta { color: rgba(255,248,231,.4); }
 
-    /* --- Full call CTA --- */
-    .full-call-box { border: 1.5px dashed var(--cream-3); border-radius: 8px; padding: 24px; margin-top: 10px; }
+    /* --- Full call CTA — dans le panel audio --- */
+    .full-call-box {
+      border: 1.5px dashed var(--cream-3); border-radius: 8px; padding: 20px;
+      margin-top: auto; padding-top: 20px;
+      grid-column: span 2; /* spans toute la largeur dans la grille audio */
+    }
     .full-call-title {
       font-family: var(--font-mono); font-size: 10px; letter-spacing: .15em;
-      text-transform: uppercase; color: var(--gold-deep); margin-bottom: 10px;
+      text-transform: uppercase; color: var(--gold-deep); margin-bottom: 8px;
       display: flex; align-items: center; gap: 6px;
     }
     .full-call-title::before { content: '★'; }
-    .full-call-desc { font-size: 14px; color: var(--teal-2); line-height: 1.55; margin-bottom: 18px; }
+    .full-call-desc { font-size: 13px; color: var(--teal-2); line-height: 1.5; margin-bottom: 14px; }
     .full-call-btn {
       display: inline-flex; align-items: center; gap: 8px;
       font-family: var(--font-mono); font-size: 11px; font-weight: 700;
       letter-spacing: .1em; text-transform: uppercase; text-decoration: none;
-      padding: 11px 22px; border-radius: 4px;
+      padding: 10px 20px; border-radius: 4px;
       background: var(--gold-deep); color: var(--cream);
       border: 1.5px solid var(--gold-deep); cursor: pointer; transition: all .2s;
     }
@@ -223,7 +231,8 @@
       .profil-above-fold { height: auto; min-height: auto; }
       .profil-hero-grid, .profil-two-col { grid-template-columns: 1fr; }
       .profil-action-inner { flex-direction: column; gap: 16px; text-align: center; }
-      .profil-pf-grid, .audio-list { grid-template-columns: 1fr; }
+      .profil-pf-grid, .audio-list, .dim-grid { grid-template-columns: 1fr; }
+      .full-call-box { grid-column: span 1; }
       #profil-card .tcard { zoom: 1; }
     }
   </style>
@@ -268,10 +277,12 @@
     </div>
   </div>
 
-  <!-- RADAR + AUDIO -->
+  <!-- RADAR + AUDIO (avec full-call CTA intégré) -->
   <section class="profil-section">
     <div class="container">
       <div class="profil-two-col">
+
+        <!-- Panel radar -->
         <div class="profil-panel" id="radar-panel">
           <div class="profil-panel-eyebrow">Performance globale</div>
           <div class="profil-panel-title">Radar 6 dimensions</div>
@@ -279,34 +290,29 @@
           <svg class="radar-svg" viewBox="0 0 550 450" id="radar-svg"></svg>
           <p class="radar-click-hint">Clique une dimension pour le détail</p>
         </div>
-        <div class="profil-panel">
+
+        <!-- Panel audio + full-call CTA en bas -->
+        <div class="profil-panel" style="gap:0">
           <div class="profil-panel-eyebrow">Extraits audio horodatés</div>
           <div class="profil-panel-title">Écoute la voix.</div>
           <div class="profil-panel-sub" id="audio-sub"></div>
+          <!-- grille audio 2×3 + CTA en bas (span 2) -->
           <div class="audio-list" id="audio-list"></div>
         </div>
+
       </div>
     </div>
   </section>
 
   <hr class="profil-divider">
 
-  <!-- DIMENSIONS + FULL CALL -->
+  <!-- DIMENSIONS — pleine largeur -->
   <section class="profil-section" style="padding-top:28px">
     <div class="container">
-      <div class="profil-two-col">
-        <div class="profil-panel">
-          <div class="profil-panel-sub" style="margin-bottom:14px;">→ Clique une dimension pour le détail</div>
-          <div class="dim-list" id="dim-list"></div>
-          <div class="profil-pf-grid" id="pf-grid"></div>
-        </div>
-        <div>
-          <div class="full-call-box">
-            <div class="full-call-title">Écouter l'appel complet ?</div>
-            <p class="full-call-desc">Téléchargement de l'audio brut + transcript intégral réservé aux comptes recruteurs abonnés.</p>
-            <a href="marketplace.html" class="full-call-btn">Accéder au pool complet →</a>
-          </div>
-        </div>
+      <div class="profil-panel">
+        <div class="profil-panel-sub" style="margin-bottom:14px;">→ Clique une dimension pour le détail</div>
+        <div class="dim-grid" id="dim-list"></div>
+        <div class="profil-pf-grid" id="pf-grid"></div>
       </div>
     </div>
   </section>
@@ -426,14 +432,14 @@
     const dateStr = new Date(c.date).toLocaleDateString('fr-FR', {day:'2-digit',month:'long'}) + ' 2026';
     document.getElementById('audio-sub').textContent = `6 moments calibrés sur les 6 dimensions du call · ${dateStr}`;
 
-    // AUDIO
+    // AUDIO + CTA intégré en bas
     function makeWave(n, played) {
       const h = [3,5,8,12,7,10,14,9,6,11,15,8,4,13,7,11,9,6,14,10,5,12,8,15,7,4,10,13,6,9];
       return h.slice(0, n).map((v, i) =>
         `<div class="${i < played ? 'waveform-bar played' : 'waveform-bar'}" style="height:${v*2}px"></div>`
       ).join('');
     }
-    document.getElementById('audio-list').innerHTML = extras.audioMoments.map((m, idx) => {
+    const audioCards = extras.audioMoments.map((m, idx) => {
       const dim = dims.find(d => d.key === m.key);
       const val = c.stats[m.key] || 0;
       const played = Math.round(30 * idx / extras.audioMoments.length);
@@ -450,7 +456,15 @@
       </div>`;
     }).join('');
 
-    // DIMENSIONS
+    const fullCallCta = `<div class="full-call-box">
+      <div class="full-call-title">Écouter l'appel complet ?</div>
+      <p class="full-call-desc">Téléchargement de l'audio brut + transcript intégral réservé aux comptes recruteurs abonnés.</p>
+      <a href="marketplace.html" class="full-call-btn">Accéder au pool complet →</a>
+    </div>`;
+
+    document.getElementById('audio-list').innerHTML = audioCards + fullCallCta;
+
+    // DIMENSIONS — en grille 2 colonnes dans le panel pleine largeur
     const dimSubs = { accroche:'Dim 1 · ACR', decouverte:'Dim 2 · DEC', besoin:'Dim 3 · BSN', objections:'Dim 4 · OBJ', valeur:'Dim 5 · VAL', closing:'Dim 6 · CLO' };
     document.getElementById('dim-list').innerHTML = dims.map((d) => {
       const val = c.stats[d.key] || 0;
