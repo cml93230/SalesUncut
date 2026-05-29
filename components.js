@@ -31,10 +31,12 @@ function renderCard(c, opts = {}) {
         <div class="tcard-header">
           <div>
             <div class="tcard-name">${displayName}</div>
+            <div class="tcard-handle">DISPO · ${c.availability}</div>
           </div>
           <div class="tcard-score">${c.score}<small>/100</small></div>
         </div>
         <div class="tcard-portrait">
+          <div class="tcard-family-badge">${c.location}</div>
           ${c.photo
             ? `<img class="tcard-photo" src="${c.photo}" alt="${displayName}" loading="lazy">`
             : `<span class="silhouette">${fam.icon}</span>`
@@ -44,7 +46,7 @@ function renderCard(c, opts = {}) {
         <div class="tcard-stats">${statsHtml}</div>
         <div class="tcard-footer">
           <span>${fam.name}</span>
-          <span>${c.location}</span>
+          <span>${serial}</span>
         </div>
       </div>
     </div>`;
@@ -114,7 +116,6 @@ function renderFooter() {
 
 /* ---------- Init globale ---------- */
 document.addEventListener('DOMContentLoaded', () => {
-  // Inject tcard-photo styles
   const style = document.createElement('style');
   style.textContent = `
     .tcard-portrait { position: relative; overflow: hidden; }
@@ -125,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
       display: block;
     }
     .tcard-photo + .tcard-rarity-stamp { z-index: 2; }
+    .tcard-family-badge { z-index: 2; }
   `;
   document.head.appendChild(style);
 
