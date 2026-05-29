@@ -1,1 +1,323 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImZyIj4KPGhlYWQ+CiAgPG1ldGEgY2hhcnNldD0iVVRGLTgiPgogIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MSI+CiAgPHRpdGxlPlNhbGVzVW5jdXQg4oCUIFJlY3J1dGVtZW50IGNvbW1lcmNpYWwuIFBhcyBwYXIgbGUgQ1YsIHBhciBsYSBwcmV1dmUuPC90aXRsZT4KICA8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIgY29udGVudD0iU2FsZXNVbmN1dCBjZXJ0aWZpZSBsZXMgY29tbWVyY2lhdXggcGFyIHNpbXVsYXRpb24gY29tbWVyY2lhbGUgcsOpZWxsZS4gUmVjcnV0ZXogc3VyIGxhIHByZXV2ZSwgcGFzIHN1ciBsZSBDVi4gNiBkaW1lbnNpb25zIHNjb3LDqWVzLCBleHRyYWl0cyBhdWRpbywgcG9vbCBmaWx0cmFibGUuIj4KICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9InN0eWxlLmNzcyI+CiAgPHN0eWxlPgogICAgLyogLS0tLSBIZXJvIC0tLS0gKi8KICAgIC5oZXJvIHsgcG9zaXRpb246IHJlbGF0aXZlOyBwYWRkaW5nOiA2MHB4IDAgMTIwcHg7IG92ZXJmbG93OiBoaWRkZW47IH0KICAgIC5oZXJvLWdyaWQgeyBkaXNwbGF5OiBncmlkOyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDEuMWZyIDAuOWZyOyBnYXA6IDYwcHg7IGFsaWduLWl0ZW1zOiBjZW50ZXI7IH0KICAgIC5oZXJvIGgxIHsgZm9udC1zaXplOiBjbGFtcCg1NnB4LCA3dncsIDEwNHB4KTsgbWFyZ2luOiAyNHB4IDAgMjhweDsgfQogICAgLmhlcm8gaDEgLmdvbGQtd29yZCB7IGNvbG9yOiB2YXIoLS1nb2xkLWRlZXApOyBmb250LWZhbWlseTogdmFyKC0tZm9udC1zZXJpZik7IGZvbnQtc3R5bGU6IGl0YWxpYzsgdGV4dC10cmFuc2Zvcm06IG5vbmU7IGZvbnQtd2VpZ2h0OiA0MDA7IGxldHRlci1zcGFjaW5nOiAtLjAyZW07IH0KICAgIC5oZXJvIGgxIC5zdHJpa2UgeyBwb3NpdGlvbjogcmVsYXRpdmU7IGNvbG9yOiB2YXIoLS10ZWFsLTMpOyB9CiAgICAuaGVybyBoMSAuc3RyaWtlOjphZnRlciB7IGNvbnRlbnQ6ICcnOyBwb3NpdGlvbjogYWJzb2x1dGU7IGxlZnQ6IC00JTsgcmlnaHQ6IC00JTsgdG9wOiA1MCU7IGhlaWdodDogOHB4OyBiYWNrZ3JvdW5kOiB2YXIoLS1ydXN0KTsgdHJhbnNmb3JtOiByb3RhdGUoLTJkZWcpOyB9CiAgICAuaGVybyBwLmxlZGUgeyBmb250LXNpemU6IDE5cHg7IGNvbG9yOiB2YXIoLS10ZWFsLTIpOyBtYXgtd2lkdGg6IDU0MHB4OyBtYXJnaW4tYm90dG9tOiAzNnB4OyBsaW5lLWhlaWdodDogMS41NTsgfQogICAgLmhlcm8tY3RhIHsgZGlzcGxheTogZmxleDsgZ2FwOiAxNnB4OyBmbGV4LXdyYXA6IHdyYXA7IH0KICAgIC5oZXJvLWtwaSB7IGRpc3BsYXk6IGZsZXg7IGdhcDogNDBweDsgZmxleC13cmFwOiB3cmFwOyBtYXJnaW4tdG9wOiAzNnB4OyB9CiAgICAuaGVyby1rcGkgLmtwaS1udW0geyBmb250LWZhbWlseTogdmFyKC0tZm9udC1kaXNwbGF5KTsgZm9udC1zaXplOiA0MHB4OyBmb250LXdlaWdodDogOTAwOyBjb2xvcjogdmFyKC0tZ29sZC1kZWVwKTsgbGluZS1oZWlnaHQ6IDE7IH0KICAgIC5oZXJvLWtwaSAua3BpLWxibCB7IGZvbnQtZmFtaWx5OiB2YXIoLS1mb250LW1vbm8pOyBmb250LXNpemU6IDExcHg7IGxldHRlci1zcGFjaW5nOiAuMTJlbTsgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTsgY29sb3I6IHZhcigtLXRlYWwtMyk7IG1hcmdpbi10b3A6IDRweDsgfQoKICAgIC8qIC0tLS0gSGVybyBjYXJkIHN0YWNrIC0tLS0gKi8KICAgIC5oZXJvLXN0YWdlIHsgcG9zaXRpb246IHJlbGF0aXZlOyBhc3BlY3QtcmF0aW86IDE7IHBlcnNwZWN0aXZlOiAxNDAwcHg7IH0KICAgIC5oZXJvLWNhcmQtc3RhY2sgeyBwb3NpdGlvbjogYWJzb2x1dGU7IGluc2V0OiAwOyBkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgfQogICAgLmhlcm8tY2FyZC1zdGFjayAudGNhcmQgeyBwb3NpdGlvbjogYWJzb2x1dGU7IHRyYW5zaXRpb246IHRyYW5zZm9ybSAuN3MgY3ViaWMtYmV6aWVyKC4yMiwxLC4zNiwxKTsgfQogICAgLmhlcm8tY2FyZC1zdGFjayAudGNhcmQ6bnRoLWNoaWxkKDEpIHsgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKC05MHB4KSB0cmFuc2xhdGVZKDIwcHgpIHJvdGF0ZSgtMTJkZWcpOyB6LWluZGV4OiAxOyB9CiAgICAuaGVyby1jYXJkLXN0YWNrIC50Y2FyZDpudGgtY2hpbGQoMikgeyB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMCkgcm90YXRlKDJkZWcpOyB6LWluZGV4OiAzOyB9CiAgICAuaGVyby1jYXJkLXN0YWNrIC50Y2FyZDpudGgtY2hpbGQoMykgeyB0cmFuc2Zvcm06IHRyYW5zbGF0ZVgoOTBweCkgdHJhbnNsYXRlWSgyMHB4KSByb3RhdGUoMTBkZWcpOyB6LWluZGV4OiAyOyB9CiAgICAuaGVyby1zdGFnZTpob3ZlciAudGNhcmQ6bnRoLWNoaWxkKDEpIHsgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKC0xNjBweCkgdHJhbnNsYXRlWSgwKSByb3RhdGUoLTE4ZGVnKTsgfQogICAgLmhlcm8tc3RhZ2U6aG92ZXIgLnRjYXJkOm50aC1jaGlsZCgyKSB7IHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtMTJweCkgcm90YXRlKDApIHNjYWxlKDEuMDQpOyB6LWluZGV4OiA0OyB9CiAgICAuaGVyby1zdGFnZTpob3ZlciAudGNhcmQ6bnRoLWNoaWxkKDMpIHsgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKDE2MHB4KSB0cmFuc2xhdGVZKDApIHJvdGF0ZSgxNmRlZyk7IH0KICAgIC5oZXJvLW1ldGEgeyBwb3NpdGlvbjogYWJzb2x1dGU7IGJvdHRvbTogLTMwcHg7IHJpZ2h0OiAwOyBmb250LWZhbWlseTogdmFyKC0tZm9udC1tb25vKTsgZm9udC1zaXplOiAxMXB4OyBjb2xvcjogdmFyKC0tdGVhbC0zKTsgbGV0dGVyLXNwYWNpbmc6IC4xZW07IHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7IH0KCiAgICAvKiAtLS0tIFN0ZXBzIC0tLS0gKi8KICAgIC5zdGVwcyB7IGRpc3BsYXk6IGdyaWQ7IGdyaWQtdGVtcGxhdGUtY29sdW1uczogcmVwZWF0KDQsMWZyKTsgZ2FwOiAwOyBib3JkZXI6IDEuNXB4IHNvbGlkIHZhcigtLWluayk7IGJvcmRlci1yYWRpdXM6IDZweDsgb3ZlcmZsb3c6IGhpZGRlbjsgfQogICAgLnN0ZXAgeyBwYWRkaW5nOiAzMnB4IDI0cHg7IGJhY2tncm91bmQ6IHZhcigtLWNyZWFtKTsgYm9yZGVyLXJpZ2h0OiAxLjVweCBzb2xpZCB2YXIoLS1pbmspOyBwb3NpdGlvbjogcmVsYXRpdmU7IG1pbi1oZWlnaHQ6IDI4MHB4OyBkaXNwbGF5OiBmbGV4OyBmbGV4LWRpcmVjdGlvbjogY29sdW1uOyB9CiAgICAuc3RlcDpsYXN0LWNoaWxkIHsgYm9yZGVyLXJpZ2h0OiBub25lOyB9CiAgICAuc3RlcDpudGgtY2hpbGQob2RkKSB7IGJhY2tncm91bmQ6IHZhcigtLWNyZWFtLTIpOyB9CiAgICAuc3RlcC1udW0geyBmb250LWZhbWlseTogdmFyKC0tZm9udC1kaXNwbGF5KTsgZm9udC1zaXplOiA4MHB4OyBmb250LXdlaWdodDogOTAwOyBjb2xvcjogdmFyKC0tZ29sZCk7IGxpbmUtaGVpZ2h0OiAuODsgbWFyZ2luLWJvdHRvbTogMTZweDsgdGV4dC1zaGFkb3c6IDJweCAycHggMCB2YXIoLS1pbmspOyB9CiAgICAuc3RlcCBoMyB7IGZvbnQtc2l6ZTogMjJweDsgbWFyZ2luLWJvdHRvbTogMTBweDsgfQogICAgLnN0ZXAgcCB7IGNvbG9yOiB2YXIoLS10ZWFsLTIpOyBmb250LXNpemU6IDE0cHg7IGxpbmUtaGVpZ2h0OiAxLjU1OyB9CiAgICAuc3RlcCAuc3RlcC10YWcgeyBtYXJnaW4tdG9wOiBhdXRvOyBmb250LWZhbWlseTogdmFyKC0tZm9udC1tb25vKTsgZm9udC1zaXplOiAxMHB4OyBjb2xvcjogdmFyKC0tdGVhbC0zKTsgbGV0dGVyLXNwYWNpbmc6IC4xZW07IHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7IHBhZGRpbmctdG9wOiAxNnB4OyB9CgogICAgLyogLS0tLSBUd28tY29sIGNhbmRpZGF0IC8gcmVjcnV0ZXVyIC0tLS0gKi8KICAgIC50d28tY29sIHsgZGlzcGxheTogZ3JpZDsgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyOyBnYXA6IDA7IGJvcmRlcjogMS41cHggc29saWQgdmFyKC0taW5rKTsgYm9yZGVyLXJhZGl1czogNnB4OyBvdmVyZmxvdzogaGlkZGVuOyB9CiAgICAuY29sIHsgcGFkZGluZzogNDhweDsgcG9zaXRpb246IHJlbGF0aXZlOyBtaW4taGVpZ2h0OiA0NjBweDsgfQogICAgLmNvbC1jYW5kaWRhdCB7IGJhY2tncm91bmQ6IHZhcigtLWluayk7IGNvbG9yOiB2YXIoLS1jcmVhbSk7IH0KICAgIC5jb2wtcmVjcnV0ZXVyIHsgYmFja2dyb3VuZDogdmFyKC0tY3JlYW0pOyBjb2xvcjogdmFyKC0taW5rKTsgYm9yZGVyLWxlZnQ6IDEuNXB4IHNvbGlkIHZhcigtLWluayk7IH0KICAgIC5jb2wgaDIgeyBmb250LXNpemU6IDU2cHg7IG1hcmdpbjogMjBweCAwIDE2cHg7IH0KICAgIC5jb2wgaDIgc21hbGwgeyBkaXNwbGF5OiBibG9jazsgZm9udC1zaXplOiAxNnB4OyBmb250LWZhbWlseTogdmFyKC0tZm9udC1tb25vKTsgbGV0dGVyLXNwYWNpbmc6IC4yZW07IGZvbnQtd2VpZ2h0OiA0MDA7IG1hcmdpbi1ib3R0b206IDhweDsgfQogICAgLmNvbC1jYW5kaWRhdCBoMiBzbWFsbCB7IGNvbG9yOiB2YXIoLS1nb2xkKTsgfQogICAgLmNvbC1yZWNydXRldXIgaDIgc21hbGwgeyBjb2xvcjogdmFyKC0tZ29sZC1kZWVwKTsgfQogICAgLmNvbCBwIHsgZm9udC1zaXplOiAxNnB4OyBsaW5lLWhlaWdodDogMS42OyBtYXgtd2lkdGg6IDQ2MHB4OyBtYXJnaW4tYm90dG9tOiAxMnB4OyB9CiAgICAuY29sLWNhbmRpZGF0IHAgeyBjb2xvcjogcmdiYSgyNTUsMjQ4LDIzMSwuOCk7IH0KICAgIC5jb2wtcmVjcnV0ZXVyIHAgeyBjb2xvcjogdmFyKC0tdGVhbC0yKTsgfQogICAgLmNvbCB1bCB7IGxpc3Qtc3R5bGU6IG5vbmU7IG1hcmdpbjogMjRweCAwOyB9CiAgICAuY29sIHVsIGxpIHsgcGFkZGluZzogMTJweCAwOyBib3JkZXItYm90dG9tOiAxcHggc29saWQgcmdiYSgyNTUsMjQ4LDIzMSwuMTUpOyBkaXNwbGF5OiBmbGV4OyBnYXA6IDEycHg7IGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0OyBmb250LXNpemU6IDE1cHg7IH0KICAgIC5jb2wtcmVjcnV0ZXVyIHVsIGxpIHsgYm9yZGVyLWJvdHRvbS1jb2xvcjogdmFyKC0tY3JlYW0tMyk7IH0KICAgIC5jb2wgdWwgbGk6OmJlZm9yZSB7IGNvbnRlbnQ6ICfihpInOyBmb250LWZhbWlseTogdmFyKC0tZm9udC1kaXNwbGF5KTsgY29sb3I6IHZhcigtLWdvbGQpOyBmbGV4LXNocmluazogMDsgfQoKICAgIC8qIC0tLS0gRkFRIC0tLS0gKi8KICAgIC5mYXEgeyBkaXNwbGF5OiBncmlkOyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7IGdhcDogMCAyNHB4OyB9CiAgICAuZmFxIGRldGFpbHMgeyBib3JkZXItYm90dG9tOiAxcHggc29saWQgdmFyKC0taW5rKTsgcGFkZGluZzogMTZweCAwOyB9CiAgICAuZmFxIHN1bW1hcnkgeyBjdXJzb3I6IHBvaW50ZXI7IGZvbnQtZmFtaWx5OiB2YXIoLS1mb250LWRpc3BsYXkpOyBmb250LXNpemU6IDIwcHg7IHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7IGxldHRlci1zcGFjaW5nOiAtLjAxZW07IGxpc3Qtc3R5bGU6IG5vbmU7IGRpc3BsYXk6IGZsZXg7IGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjsgYWxpZ24taXRlbXM6IGNlbnRlcjsgfQogICAgLmZhcSBzdW1tYXJ5OjphZnRlciB7IGNvbnRlbnQ6ICcrJzsgZm9udC1zaXplOiAyOHB4OyBjb2xvcjogdmFyKC0tZ29sZC1kZWVwKTsgfQogICAgLmZhcSBkZXRhaWxzW29wZW5dIHN1bW1hcnk6OmFmdGVyIHsgY29udGVudDogJ+KIkic7IH0KICAgIC5mYXEgcCB7IG1hcmdpbi10b3A6IDEycHg7IGNvbG9yOiB2YXIoLS10ZWFsLTIpOyBmb250LXNpemU6IDE1cHg7IGxpbmUtaGVpZ2h0OiAxLjU1OyB9CgogICAgQG1lZGlhIChtYXgtd2lkdGg6IDkwMHB4KSB7CiAgICAgIC5oZXJvLWdyaWQsIC50d28tY29sLCAuc3RlcHMsIC5mYXEgeyBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmcjsgfQogICAgICAuc3RlcHMgLnN0ZXAgeyBib3JkZXItcmlnaHQ6IG5vbmU7IGJvcmRlci1ib3R0b206IDEuNXB4IHNvbGlkIHZhcigtLWluayk7IH0KICAgICAgLmNvbC1yZWNydXRldXIgeyBib3JkZXItbGVmdDogbm9uZTsgYm9yZGVyLXRvcDogMS41cHggc29saWQgdmFyKC0taW5rKTsgfQogICAgICAuaGVyby1zdGFnZSB7IGRpc3BsYXk6IG5vbmU7IH0KICAgIH0KICA8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5IGNsYXNzPSJwYWdlLWVudGVyIj4KCiAgPCEtLSBOQVYgLS0+CiAgPG5hdiBjbGFzcz0ibmF2Ij4KICAgIDxhIGNsYXNzPSJuYXYtbG9nbyIgaHJlZj0iaW5kZXguaHRtbCI+PHNwYW4gY2xhc3M9ImRvdCI+PC9zcGFuPlNhbGVzVW5jdXQ8L2E+CiAgICA8ZGl2IGNsYXNzPSJuYXYtbGlua3MiPgogICAgICA8YSBocmVmPSJpbmRleC5odG1sIj5BY2N1ZWlsPC9hPgogICAgICA8YSBocmVmPSJjYW5kaWRhdC5odG1sIj5Qb3VyIGNhbmRpZGF0czwvYT4KICAgICAgPGEgaHJlZj0ibWFya2V0cGxhY2UuaHRtbCI+UG91ciByZWNydXRldXJzPC9hPgogICAgICA8YSBocmVmPSJwcm9maWwuaHRtbD9pZD1jMDAxIj5Wb2lyIHVuIHByb2ZpbDwvYT4KICAgIDwvZGl2PgogICAgPGEgaHJlZj0iY2FuZGlkYXQuaHRtbCIgY2xhc3M9ImJ0biBzbSBnb2xkIj5QYXNzZXIgbGUgdGVzdDwvYT4KICA8L25hdj4KCiAgPCEtLSBIRVJPIC0tPgogIDxzZWN0aW9uIGNsYXNzPSJoZXJvIj4KICAgIDxkaXYgY2xhc3M9ImNvbnRhaW5lciI+CiAgICAgIDxkaXYgY2xhc3M9Imhlcm8tZ3JpZCI+CgogICAgICAgIDxkaXY+CiAgICAgICAgICA8c3BhbiBjbGFzcz0iZXllYnJvdyI+UmVjcnV0ZW1lbnQgY29tbWVyY2lhbC4gUGFzIHBhciBsZSBDViwgcGFyIGxhIHByZXV2ZS48L3NwYW4+CiAgICAgICAgICA8aDE+CiAgICAgICAgICAgIExlcyBDViByYWNvbnRlbnQuPGJyPgogICAgICAgICAgICA8c3BhbiBjbGFzcz0iZ29sZC13b3JkIj5MZXMgYXBwZWxzIHByb3V2ZW50Ljwvc3Bhbj4KICAgICAgICAgIDwvaDE+CiAgICAgICAgICA8cCBjbGFzcz0ibGVkZSI+CiAgICAgICAgICAgIDMwIG1pbnV0ZXMgZGUgc2ltdWxhdGlvbiBjb21tZXJjaWFsZSByw6llbGxlLiBEZXMgcmVjcnV0ZXVycyBxdWkgZmlsdHJlbnQgcGFyIHNjb3JlLCBwYXMgcGFyIGludHVpdGlvbi4KICAgICAgICAgIDwvcD4KICAgICAgICAgIDxkaXYgY2xhc3M9Imhlcm8tY3RhIj4KICAgICAgICAgICAgPGEgaHJlZj0iY2FuZGlkYXQuaHRtbCIgY2xhc3M9ImJ0biBnb2xkIj7ilrYgTW9udHJlciBjZSBxdWUgamUgdmF1eDwvYT4KICAgICAgICAgICAgPGEgaHJlZj0ibWFya2V0cGxhY2UuaHRtbCIgY2xhc3M9ImJ0biBvdXRsaW5lIj5Wb2lyIGxlcyBwcm9maWxzIHNhbnMgaW5zY3JpcHRpb24g4oaSPC9hPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJoZXJvLWtwaSI+CiAgICAgICAgICAgIDxkaXY+PGRpdiBjbGFzcz0ia3BpLW51bSI+MzBzPC9kaXY+PGRpdiBjbGFzcz0ia3BpLWxibCI+UG91ciBxdWFsaWZpZXI8L2Rpdj48L2Rpdj4KICAgICAgICAgICAgPGRpdj48ZGl2IGNsYXNzPSJrcGktbnVtIj42PC9kaXY+PGRpdiBjbGFzcz0ia3BpLWxibCI+RGltZW5zaW9ucyBzY29yw6llczwvZGl2PjwvZGl2PgogICAgICAgICAgICA8ZGl2PjxkaXYgY2xhc3M9ImtwaS1udW0iPjIxODwvZGl2PjxkaXYgY2xhc3M9ImtwaS1sYmwiPkNvbW1lcmNpYXV4IHRlc3TDqXM8L2Rpdj48L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICA8ZGl2IGNsYXNzPSJoZXJvLXN0YWdlIj4KICAgICAgICAgIDxkaXYgY2xhc3M9Imhlcm8tY2FyZC1zdGFjayIgaWQ9Imhlcm9TdGFjayI+PC9kaXY+CiAgICAgICAgICA8ZGl2IGNsYXNzPSJoZXJvLW1ldGEiPuKGsyBTdXJ2b2xlIGxhIHBpbGUgwrcgY2xxdWVzIHBvdXIgb3V2cmlyPC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICA8L2Rpdj4KICAgIDwvZGl2PgogIDwvc2VjdGlvbj4KCiAgPCEtLSBNQVJRVUVFIC0tPgogIDxkaXYgY2xhc3M9Im1hcnF1ZWUiPgogICAgPGRpdiBjbGFzcz0ibWFycXVlZS10cmFjayI+CiAgICAgIDxzcGFuPsOJY291dGUgJmd0OyBDVjwvc3Bhbj48c3BhbiBjbGFzcz0iZ29sZC10ZXh0Ij7impc8L3NwYW4+CiAgICAgIDxzcGFuPjMwIG1pbiBkZSB2w6lyaXTDqTwvc3Bhbj48c3BhbiBjbGFzcz0iZ29sZC10ZXh0Ij7impc8L3NwYW4+CiAgICAgIDxzcGFuPjYgZGltZW5zaW9ucyDDqXZhbHXDqWVzPC9zcGFuPjxzcGFuIGNsYXNzPSJnb2xkLXRleHQiPuKalzwvc3Bhbj4KICAgICAgPHNwYW4+RmlsdHJlIHBhciBzY29yZSwgcGFzIHBhciBpbnN0aW5jdDwvc3Bhbj48c3BhbiBjbGFzcz0iZ29sZC10ZXh0Ij7impc8L3NwYW4+CiAgICAgIDxzcGFuPsOJY291dGUgJmd0OyBDVjwvc3Bhbj48c3BhbiBjbGFzcz0iZ29sZC10ZXh0Ij7impc8L3NwYW4+CiAgICAgIDxzcGFuPjMwIG1pbiBkZSB2w6lyaXTDqTwvc3Bhbj48c3BhbiBjbGFzcz0iZ29sZC10ZXh0Ij7impc8L3NwYW4+CiAgICAgIDxzcGFuPjYgZGltZW5zaW9ucyDDqXZhbHXDqWVzPC9zcGFuPjxzcGFuIGNsYXNzPSJnb2xkLXRleHQiPuKalzwvc3Bhbj4KICAgICAgPHNwYW4+RmlsdHJlIHBhciBzY29yZSwgcGFzIHBhciBpbnN0aW5jdDwvc3Bhbj48c3BhbiBjbGFzcz0iZ29sZC10ZXh0Ij7impc8L3NwYW4+CiAgICA8L2Rpdj4KICA8L2Rpdj4KCiAgPCEtLSBDT01NRU5UIENNQSBNQVJDSGUQ...
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SalesUncut — Recrutement commercial. Pas par le CV, par la preuve.</title>
+  <meta name="description" content="SalesUncut certifie les commerciaux par simulation commerciale réelle. Recrutez sur la preuve, pas sur le CV. 6 dimensions scorées, extraits audio, pool filtrable.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ---- Hero ---- */
+    .hero { position: relative; padding: 60px 0 120px; overflow: hidden; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; }
+    .hero h1 { font-size: clamp(56px, 7vw, 104px); margin: 24px 0 28px; }
+    .hero h1 .gold-word { color: var(--gold-deep); font-family: var(--font-serif); font-style: italic; text-transform: none; font-weight: 400; letter-spacing: -.02em; }
+    .hero h1 .strike { position: relative; color: var(--teal-3); }
+    .hero h1 .strike::after { content: ''; position: absolute; left: -4%; right: -4%; top: 50%; height: 8px; background: var(--rust); transform: rotate(-2deg); }
+    .hero p.lede { font-size: 19px; color: var(--teal-2); max-width: 540px; margin-bottom: 36px; line-height: 1.55; }
+    .hero-cta { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-kpi { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 36px; }
+    .hero-kpi .kpi-num { font-family: var(--font-display); font-size: 40px; font-weight: 900; color: var(--gold-deep); line-height: 1; }
+    .hero-kpi .kpi-lbl { font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--teal-3); margin-top: 4px; }
+
+    /* ---- Hero card stack ---- */
+    .hero-stage { position: relative; aspect-ratio: 1; perspective: 1400px; }
+    .hero-card-stack { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+    .hero-card-stack .tcard { position: absolute; transition: transform .7s cubic-bezier(.22,1,.36,1); }
+    .hero-card-stack .tcard:nth-child(1) { transform: translateX(-90px) translateY(20px) rotate(-12deg); z-index: 1; }
+    .hero-card-stack .tcard:nth-child(2) { transform: translateY(0) rotate(2deg); z-index: 3; }
+    .hero-card-stack .tcard:nth-child(3) { transform: translateX(90px) translateY(20px) rotate(10deg); z-index: 2; }
+    .hero-stage:hover .tcard:nth-child(1) { transform: translateX(-160px) translateY(0) rotate(-18deg); }
+    .hero-stage:hover .tcard:nth-child(2) { transform: translateY(-12px) rotate(0) scale(1.04); z-index: 4; }
+    .hero-stage:hover .tcard:nth-child(3) { transform: translateX(160px) translateY(0) rotate(16deg); }
+    .hero-meta { position: absolute; bottom: -30px; right: 0; font-family: var(--font-mono); font-size: 11px; color: var(--teal-3); letter-spacing: .1em; text-transform: uppercase; }
+
+    /* ---- Steps ---- */
+    .steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; border: 1.5px solid var(--ink); border-radius: 6px; overflow: hidden; }
+    .step { padding: 32px 24px; background: var(--cream); border-right: 1.5px solid var(--ink); position: relative; min-height: 280px; display: flex; flex-direction: column; }
+    .step:last-child { border-right: none; }
+    .step:nth-child(odd) { background: var(--cream-2); }
+    .step-num { font-family: var(--font-display); font-size: 80px; font-weight: 900; color: var(--gold); line-height: .8; margin-bottom: 16px; text-shadow: 2px 2px 0 var(--ink); }
+    .step h3 { font-size: 22px; margin-bottom: 10px; }
+    .step p { color: var(--teal-2); font-size: 14px; line-height: 1.55; }
+    .step .step-tag { margin-top: auto; font-family: var(--font-mono); font-size: 10px; color: var(--teal-3); letter-spacing: .1em; text-transform: uppercase; padding-top: 16px; }
+
+    /* ---- Two-col candidat / recruteur ---- */
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1.5px solid var(--ink); border-radius: 6px; overflow: hidden; }
+    .col { padding: 48px; position: relative; min-height: 460px; }
+    .col-candidat { background: var(--ink); color: var(--cream); }
+    .col-recruteur { background: var(--cream); color: var(--ink); border-left: 1.5px solid var(--ink); }
+    .col h2 { font-size: 56px; margin: 20px 0 16px; }
+    .col h2 small { display: block; font-size: 16px; font-family: var(--font-mono); letter-spacing: .2em; font-weight: 400; margin-bottom: 8px; }
+    .col-candidat h2 small { color: var(--gold); }
+    .col-recruteur h2 small { color: var(--gold-deep); }
+    .col p { font-size: 16px; line-height: 1.6; max-width: 460px; margin-bottom: 12px; }
+    .col-candidat p { color: rgba(255,248,231,.8); }
+    .col-recruteur p { color: var(--teal-2); }
+    .col ul { list-style: none; margin: 24px 0; }
+    .col ul li { padding: 12px 0; border-bottom: 1px solid rgba(255,248,231,.15); display: flex; gap: 12px; align-items: flex-start; font-size: 15px; }
+    .col-recruteur ul li { border-bottom-color: var(--cream-3); }
+    .col ul li::before { content: '→'; font-family: var(--font-display); color: var(--gold); flex-shrink: 0; }
+
+    /* ---- FAQ ---- */
+    .faq { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+    .faq details { border-bottom: 1px solid var(--ink); padding: 16px 0; }
+    .faq summary { cursor: pointer; font-family: var(--font-display); font-size: 20px; text-transform: uppercase; letter-spacing: -.01em; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .faq summary::after { content: '+'; font-size: 28px; color: var(--gold-deep); }
+    .faq details[open] summary::after { content: '−'; }
+    .faq p { margin-top: 12px; color: var(--teal-2); font-size: 15px; line-height: 1.55; }
+
+    @media (max-width: 900px) {
+      .hero-grid, .two-col, .steps, .faq { grid-template-columns: 1fr; }
+      .steps .step { border-right: none; border-bottom: 1.5px solid var(--ink); }
+      .col-recruteur { border-left: none; border-top: 1.5px solid var(--ink); }
+      .hero-stage { display: none; }
+    }
+  </style>
+</head>
+<body class="page-enter">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a class="nav-logo" href="index.html"><span class="dot"></span>SalesUncut</a>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="candidat.html">Pour candidats</a>
+      <a href="marketplace.html">Pour recruteurs</a>
+      <a href="profil.html?id=c001">Voir un profil</a>
+    </div>
+    <a href="candidat.html" class="btn sm gold">Passer le test</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <div>
+          <span class="eyebrow">Recrutement commercial. Pas par le CV, par la preuve.</span>
+          <h1>
+            Les CV racontent.<br>
+            <span class="gold-word">Les appels prouvent.</span>
+          </h1>
+          <p class="lede">
+            30 minutes de simulation commerciale réelle. Des recruteurs qui filtrent par score, pas par intuition.
+          </p>
+          <div class="hero-cta">
+            <a href="candidat.html" class="btn gold">▶ Montrer ce que je vaux</a>
+            <a href="marketplace.html" class="btn outline">Voir les profils sans inscription →</a>
+          </div>
+          <div class="hero-kpi">
+            <div><div class="kpi-num">30s</div><div class="kpi-lbl">Pour qualifier</div></div>
+            <div><div class="kpi-num">6</div><div class="kpi-lbl">Dimensions scorées</div></div>
+            <div><div class="kpi-num">218</div><div class="kpi-lbl">Commerciaux testés</div></div>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <div class="hero-card-stack" id="heroStack"></div>
+          <div class="hero-meta">↳ Survole la pile · clique pour ouvrir</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Écoute &gt; CV</span><span class="gold-text">★</span>
+      <span>30 min de vérité</span><span class="gold-text">★</span>
+      <span>7 dimensions notées par IA</span><span class="gold-text">★</span>
+      <span>Certifié 18 mois</span><span class="gold-text">★</span>
+      <span>Écoute &gt; CV</span><span class="gold-text">★</span>
+      <span>30 min de vérité</span><span class="gold-text">★</span>
+    </div>
+  </div>
+
+  <!-- COMMENT ÇA MARCHE -->
+  <section class="section">
+    <div class="container">
+      <span class="eyebrow">Comment ça marche</span>
+      <h1 style="font-size:64px;margin:16px 0 48px;">Ici, on recrute autrement.<br><small style="font-size:0.4em;font-weight:400;opacity:0.6;letter-spacing:0.05em;">Côté sales ↓ · Côté recruteur ↓</small></h1>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Choisis ta famille</h3>
+          <p>10 verticales possibles : SaaS RH, Sales CRM, Finance, Cyber, Énergie… Tu choisis ton terrain de chasse.</p>
+          <div class="step-tag">→ 10 familles × 3 scénarios</div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>30 min en live</h3>
+          <p>30 minutes. Un prospect qui ne fait pas de cadeaux. Tu gères ou tu gères pas.</p>
+          <div class="step-tag">→ Aucun rattrapage. Une prise.</div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Ta carte sort</h3>
+          <p>Sept dimensions notées sur 100. Sept extraits horodatés. Un niveau Bronze, Silver ou Gold tamponné dessus.</p>
+          <div class="step-tag">→ Notation IA + validation humaine</div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Le pool te trouve</h3>
+          <p>Tu apparais dans la marketplace recruteurs avec tes critères. Eux filtrent, écoutent, te contactent — ou pas.</p>
+          <div class="step-tag">→ Validité 18 mois</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANDIDAT / RECRUTEUR -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="two-col">
+        <div class="col col-candidat">
+          <span class="eyebrow" style="color:var(--gold)">Pour les sales</span>
+          <h2><small>Côté candidat</small>Sors du<br>CV-bingo. Place à la preuve.</h2>
+          <p>Tu en as marre d'envoyer 80 candidatures pour trois entretiens où on te demande « vendez-moi ce stylo ». On t'écoute vendre, point.</p>
+          <ul>
+            <li>Ta carte active dans le pool pendant 18 mois : les recruteurs te trouvent, tu n'as rien à faire</li>
+            <li>Tu fixes tes conditions (salaire, remote, taille) — le matching vient à toi</li>
+            <li>Anonymat complet possible : tu valides avant de te révéler</li>
+            <li>Badge LinkedIn certifié SalesUncut : prouve tes scores directement sur ton profil</li>
+          </ul>
+          <a href="candidat.html" class="btn gold">Passer ma simulation →</a>
+        </div>
+        <div class="col col-recruteur">
+          <span class="eyebrow">Pour les recruteurs</span>
+          <h2><small>Côté recruteur</small>Filtre.<br>Écoute. Recrute.</h2>
+          <p>Plus de pré-quali interminables au téléphone. Tu vois la carte, tu cliques l'extrait closing, tu sais en 30 secondes si le profil mérite un entretien.</p>
+          <ul>
+            <li>30 secondes pour décider si un profil mérite un entretien</li>
+            <li>Filtres sur les vraies compétences (closing, discovery, gestion objections)</li>
+            <li>Extraits audio horodatés : tu entends la voix, les réactions, la posture</li>
+            <li><strong>Essai gratuit : 1 profil complet sans CB</strong></li>
+          </ul>
+          <a href="marketplace.html" class="btn">Voir le pool →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DERNIERS ARRIVANTS -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:24px;">
+        <div>
+          <span class="eyebrow">Drop de la semaine</span>
+          <h1 style="font-size:56px;margin-top:12px;">Nouveaux arrivants dans le pool.</h1>
+        </div>
+        <a href="marketplace.html" class="btn outline sm">Tout voir →</a>
+      </div>
+      <div class="cards-row" id="featuredCards"></div>
+    </div>
+  </section>
+
+  <!-- LEADERBOARD -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <span class="eyebrow">Hall of fame</span>
+      <h1 style="font-size:56px;margin:12px 0 32px;">Top 8 du pool · mai 2026</h1>
+      <div class="leaderboard">
+        <div class="lb-header">
+          <span>Classement général</span>
+          <span class="mono" style="font-size:12px;letter-spacing:.1em;">MIS À JOUR EN TEMPS RÉEL</span>
+        </div>
+        <div id="leaderboardRows"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h1 style="font-size:48px;margin:12px 0 32px;">Ce que tout le monde demande.</h1>
+      <div class="faq">
+        <details>
+          <summary>C'est combien ?</summary>
+          <p>Bronze 39€ · Silver 59€ · Gold 89€ pour le candidat. Pour les recruteurs : 1 profil gratuit, puis abonnement pool complet.</p>
+        </details>
+        <details>
+          <summary>Pourquoi faire ça plutôt qu'un entretien normal ?</summary>
+          <p>Parce que tu passes UNE simulation, et elle te ramène N recruteurs au lieu que toi tu coures après. C'est l'inverse du marché.</p>
+        </details>
+        <details>
+          <summary>Vous notez comment ?</summary>
+          <p>Sept dimensions, pondérations fixes, grille publique. Notation IA + validation humaine par notre équipe avant publication.</p>
+        </details>
+        <details>
+          <summary>Je peux retenter ?</summary>
+          <p>Oui, après 30 jours. Et tu peux passer une autre famille pour montrer un autre angle de ton profil.</p>
+        </details>
+        <details>
+          <summary>Et si j'ai un mauvais score ?</summary>
+          <p>Tu reçois quand même ton rapport avec axes de progression. Tu choisis si tu publies ton profil dans le pool.</p>
+        </details>
+        <details>
+          <summary>C'est anonyme ?</summary>
+          <p>Au choix. Tu peux apparaître en clair (Nom + photo) ou en handle (ex: ARES-04). Le recruteur voit toujours ton audio.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section style="background:var(--ink);color:var(--cream);padding:100px 0;position:relative;overflow:hidden;">
+    <div class="container" style="text-align:center;position:relative;">
+      <span class="eyebrow" style="color:var(--gold)">Dernier appel</span>
+      <h1 style="font-size:clamp(64px,9vw,140px);margin:24px 0;color:var(--cream);">
+        Montre que<br>tu sais
+        <span style="color:var(--gold);font-family:var(--font-serif);font-style:italic;text-transform:none;font-weight:400;"> vendre</span>.
+      </h1>
+      <p style="font-size:18px;opacity:.7;max-width:540px;margin:0 auto 36px;">
+        Pas de CV à retravailler. Pas de lettre de motivation.
+        Juste 30 minutes au téléphone avec un prospect IA, et une carte qui te suit.
+      </p>
+      <a href="candidat.html" class="btn gold">▶ Démarrer ma simulation</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="site-footer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="data.js"></script>
+  <script src="components.js"></script>
+  <script>
+    // Hero card stack — on évite F5 (cadenas) en vitrine
+    const heroIds = ['c001', 'c003', 'c004'];
+    document.getElementById('heroStack').innerHTML =
+      heroIds.map(id => {
+        const c = SU_DATA.candidates.find(x => x.id === id);
+        return c ? renderCard(c, { compact: true }) : '';
+      }).join('');
+
+    // Featured cards (5 derniers)
+    document.getElementById('featuredCards').innerHTML =
+      SU_DATA.candidates.slice(0, 5).map(c => renderCard(c)).join('');
+
+    // Leaderboard top 8
+    const top8 = [...SU_DATA.candidates].sort((a,b) => b.score - a.score).slice(0, 8);
+    document.getElementById('leaderboardRows').innerHTML = top8.map((c, i) => {
+      const fam = SU_DATA.getFamilyById(c.family);
+      return `
+        <div class="lb-row ${i === 0 ? 'gold' : ''}">
+          <div class="lb-rank ${i === 0 ? 'gold' : ''}">${String(i+1).padStart(2,'0')}</div>
+          <div>${i===0?'👑':i===1?'🥈':i===2?'🥉':'·'}</div>
+          <div class="lb-name">
+            ${c.anonymous ? c.handle : c.name}
+            <span class="mono" style="color:var(--teal-3);font-size:11px;margin-left:6px;">${c.handle}</span>
+          </div>
+          <div><span class="lb-tag">${fam.name}</span></div>
+          <div class="mono" style="font-size:12px;color:var(--teal-2);">${c.location}</div>
+          <div class="mono" style="font-size:12px;color:var(--teal-2);">${c.availability}</div>
+          <div class="lb-score">${c.score}</div>
+        </div>`;
+    }).join('');
+  </script>
+
+</body>
+</html>
