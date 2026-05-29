@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SalesUncut — Recrutement commercial. Pas par le CV, par la preuve.</title>
+  <title>SalesUncut — Recrutement commercial, par la preuve.</title>
   <meta name="description" content="SalesUncut certifie les commerciaux par simulation commerciale réelle. Recrutez sur la preuve, pas sur le CV. 6 dimensions scorées, extraits audio, pool filtrable.">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -15,7 +15,7 @@
     .hero h1 .strike { position: relative; color: var(--teal-3); }
     .hero h1 .strike::after { content: ''; position: absolute; left: -4%; right: -4%; top: 50%; height: 8px; background: var(--rust); transform: rotate(-2deg); }
     .hero p.lede { font-size: 19px; color: var(--teal-2); max-width: 540px; margin-bottom: 36px; line-height: 1.55; }
-    .hero-cta { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+    .hero-cta { display: flex; gap: 24px; flex-wrap: nowrap; align-items: flex-start; }
     .hero-cta-item { display: flex; flex-direction: column; gap: 8px; }
     .hero-kpi { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 36px; }
     .hero-kpi .kpi-num { font-family: var(--font-display); font-size: 40px; font-weight: 900; color: var(--gold-deep); line-height: 1; }
@@ -49,6 +49,14 @@
     .col-recruteur ul li { border-bottom-color: var(--cream-3); }
     .col ul li::before { content: '→'; font-family: var(--font-display); color: var(--gold); flex-shrink: 0; }
 
+    /* ---- Two-col hints row ---- */
+    .two-col-hints {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      margin-bottom: 16px;
+    }
+
     /* ---- FAQ ---- */
     .faq { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
     .faq details { border-bottom: 1px solid var(--ink); padding: 16px 0; }
@@ -61,7 +69,8 @@
       .hero-grid, .two-col, .faq { grid-template-columns: 1fr; }
       .col-recruteur { border-left: none; border-top: 1.5px solid var(--ink); }
       .hero-stage { display: none; }
-      .hero-cta { flex-direction: column; }
+      .hero-cta { flex-wrap: wrap; }
+      .two-col-hints { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -85,9 +94,9 @@
       <div class="hero-grid">
 
         <div>
-          <span class="eyebrow">Recrutement commercial. Pas par le CV, par la preuve.</span>
+          <span class="eyebrow">Recrutement commercial, par la preuve.</span>
           <h1>
-            <span class="gold-word">Les CV racontent.</span><br>
+            <span class="gold-word">Les CV<br>racontent.</span><br>
             Les appels prouvent.
           </h1>
           <p class="lede">
@@ -132,19 +141,39 @@
     </div>
   </div>
 
-  <!-- CANDIDAT / RECRUTEUR -->
+  <!-- DERNIERS ARRIVANTS — juste après la marquee -->
   <section class="section">
     <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:24px;">
+        <div>
+          <span class="eyebrow">Drop de la semaine</span>
+          <h1 style="font-size:56px;margin-top:12px;">Nouveaux arrivants dans le pool.</h1>
+        </div>
+        <a href="marketplace.html" class="btn outline sm">Tout voir →</a>
+      </div>
+      <div class="cards-row" id="featuredCards"></div>
+    </div>
+  </section>
+
+  <!-- COMMENT ÇA MARCHE + CANDIDAT / RECRUTEUR -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <span class="eyebrow">Comment ça marche</span>
+      <h1 style="font-size:64px;margin:16px 0 32px;">Ici, on recrute autrement.</h1>
+      <div class="two-col-hints">
+        <p class="hero-nav-hint">Côté sales ↓</p>
+        <p class="hero-nav-hint">Côté recruteur ↓</p>
+      </div>
       <div class="two-col">
         <div class="col col-candidat">
           <span class="eyebrow" style="color:var(--gold)">Pour les sales</span>
           <h2><small>Côté candidat</small>Sors du<br>CV-bingo. Place à la preuve.</h2>
-          <p>Tu en as marre d'envoyer 80 candidatures pour trois entretiens où on te demande « vendez-moi ce stylo ». On t'écoute vendre, point.</p>
+          <p>Tu en as marre d'envoyer 80 candidatures pour trois entretiens où on te demande « vendez-moi ce stylo ». On t'écoute vendre, point.</p>
           <ul>
-            <li>Ta carte active dans le pool pendant 18 mois : les recruteurs te trouvent, tu n'as rien à faire</li>
+            <li>Ta carte active dans le pool pendant 18 mois : les recruteurs te trouvent, tu n'as rien à faire</li>
             <li>Tu fixes tes conditions (salaire, remote, taille) — le matching vient à toi</li>
-            <li>Anonymat complet possible : tu valides avant de te révéler</li>
-            <li>Badge LinkedIn certifié SalesUncut : prouve tes scores directement sur ton profil</li>
+            <li>Anonymat complet possible : tu valides avant de te révéler</li>
+            <li>Badge LinkedIn certifié SalesUncut : prouve tes scores directement sur ton profil</li>
           </ul>
           <a href="candidat.html" class="btn gold">Passer ma simulation →</a>
         </div>
@@ -155,26 +184,12 @@
           <ul>
             <li>30 secondes pour décider si un profil mérite un entretien</li>
             <li>Filtres sur les vraies compétences (closing, discovery, gestion objections)</li>
-            <li>Extraits audio horodatés : tu entends la voix, les réactions, la posture</li>
-            <li><strong>Essai gratuit : 1 profil complet sans CB</strong></li>
+            <li>Extraits audio horodatés : tu entends la voix, les réactions, la posture</li>
+            <li><strong>Essai gratuit : 1 profil complet sans CB</strong></li>
           </ul>
           <a href="marketplace.html" class="btn">Voir le pool →</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- DERNIERS ARRIVANTS -->
-  <section class="section" style="padding-top:0">
-    <div class="container">
-      <div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:24px;">
-        <div>
-          <span class="eyebrow">Drop de la semaine</span>
-          <h1 style="font-size:56px;margin-top:12px;">Nouveaux arrivants dans le pool.</h1>
-        </div>
-        <a href="marketplace.html" class="btn outline sm">Tout voir →</a>
-      </div>
-      <div class="cards-row" id="featuredCards"></div>
     </div>
   </section>
 
@@ -200,28 +215,28 @@
       <h1 style="font-size:48px;margin:12px 0 32px;">Ce que tout le monde demande.</h1>
       <div class="faq">
         <details>
-          <summary>C'est combien ?</summary>
-          <p>Bronze 39€ · Silver 59€ · Gold 89€ pour le candidat. Pour les recruteurs : 1 profil gratuit, puis abonnement pool complet.</p>
+          <summary>C'est combien ?</summary>
+          <p>Bronze 39€ · Silver 59€ · Gold 89€ pour le candidat. Pour les recruteurs : 1 profil gratuit, puis abonnement pool complet.</p>
         </details>
         <details>
-          <summary>Pourquoi faire ça plutôt qu'un entretien normal ?</summary>
+          <summary>Pourquoi faire ça plutôt qu'un entretien normal ?</summary>
           <p>Parce que tu passes UNE simulation, et elle te ramène N recruteurs au lieu que toi tu coures après. C'est l'inverse du marché.</p>
         </details>
         <details>
-          <summary>Vous notez comment ?</summary>
+          <summary>Vous notez comment ?</summary>
           <p>Sept dimensions, pondérations fixes, grille publique. Notation IA + validation humaine par notre équipe avant publication.</p>
         </details>
         <details>
-          <summary>Je peux retenter ?</summary>
+          <summary>Je peux retenter ?</summary>
           <p>Oui, après 30 jours. Et tu peux passer une autre famille pour montrer un autre angle de ton profil.</p>
         </details>
         <details>
-          <summary>Et si j'ai un mauvais score ?</summary>
+          <summary>Et si j'ai un mauvais score ?</summary>
           <p>Tu reçois quand même ton rapport avec axes de progression. Tu choisis si tu publies ton profil dans le pool.</p>
         </details>
         <details>
-          <summary>C'est anonyme ?</summary>
-          <p>Au choix. Tu peux apparaître en clair (Nom + photo) ou en handle (ex: ARES-04). Le recruteur voit toujours ton audio.</p>
+          <summary>C'est anonyme ?</summary>
+          <p>Au choix. Tu peux apparaître en clair (Nom + photo) ou en handle (ex : ARES-04). Le recruteur voit toujours ton audio.</p>
         </details>
       </div>
     </div>
